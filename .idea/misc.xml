@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/activity_perfil.xml" value="0.1" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/alert_dialog.xml" value="0.5497206703910614" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/app_bar_perfil.xml" value="0.1" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/content_perfil.xml" value="0.1" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/fragment_item.xml" value="0.67" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/fragment_item_list.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/fragment_main.xml" value="0.1" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/fragment_perfilnew.xml" value="0.22" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/fragment_reportenew.xml" value="0.33" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/fragment_slideshow.xml" value="0.1" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/fragment_sobrevivientes.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/item_sobrevivientes.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/main_activity.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/main_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/nav_header_perfil.xml" value="0.1" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/nuevo_usuario_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/reportar_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/layout/reporte_fragment.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.18717948717948718" />
+        <entry key="..\:/Users/e-jagarciar/AndroidStudioProjects/ZSSNApp/app/src/main/res/menu/perfil.xml" value="0.16296296296296298" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

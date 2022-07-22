@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.perfil.PerfilFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/d15dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDatosPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imagenPerfil"
+                        android:layout_width="@dimen/d100dp"
+                        android:layout_height="@dimen/d100dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_account_circle_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imagenInfec"
+                        android:layout_width="@dimen/d100dp"
+                        android:layout_height="@dimen/d100dp"
+                        android:layout_marginTop="8dp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_baseline_screen_lock_portrait_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txvNombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jose Antonio"
+                        android:textSize="@dimen/d15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imagenPerfil" />
+
+                    <TextView
+                        android:id="@+id/txvEdad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16 años"
+                        android:textSize="@dimen/d15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txvNombre" />
+
+                    <TextView
+                        android:id="@+id/txvGenero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hombre"
+                        android:textSize="@dimen/d15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txvEdad" />
+
+                    <TextView
+                        android:id="@+id/txvCoordenadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-102021321,1231321"
+                        android:textSize="@dimen/d15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txvGenero" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardInventarioPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d15dp"
+                app:layout_constraintTop_toBottomOf="@id/cardDatosPerfil"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imagenInventario"
+                        android:layout_width="@dimen/d100dp"
+                        android:layout_height="@dimen/d100dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_baseline_business_center_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txvAgua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agua: 1"
+                        android:textSize="@dimen/d15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imagenInventario" />
+
+                    <TextView
+                        android:id="@+id/txvComida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comida: 2"
+                        android:textSize="@dimen/d15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txvAgua" />
+
+                    <TextView
+                        android:id="@+id/txvMedicina"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medicina: 3"
+                        android:textSize="@dimen/d15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txvComida" />
+
+                    <TextView
+                        android:id="@+id/txvMuniciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Municiones: 4"
+                        android:textSize="@dimen/d15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txvMedicina" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnInformes"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/informes"
+                android:textSize="@dimen/d15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardInventarioPerfil" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCambioCoordenas"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/cambio_ubicaci_n"
+                android:textSize="@dimen/d15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnInformes" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnReportar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/red"
+                android:text="@string/reportar_infectado"
+                android:layout_marginBottom="@dimen/d15dp"
+                android:textSize="@dimen/d15dp"
+                app:layout_constraintBottom_toTopOf="@id/btnSalir"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSalir"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/red"
+                android:text="@string/salir"
+                android:textSize="@dimen/d15dp"
+                app:layout_constraintBottom_toTopOf="@+id/fab"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

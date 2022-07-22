@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.nuevo_usuario.NuevoUsuarioFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/d20dp"
+        android:textStyle="bold"
+        android:text="@string/nuevo_ususario"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/d40dp"
+            android:layout_marginBottom="@dimen/d15dp"
+            android:layout_marginEnd="@dimen/d15dp"
+            android:layout_marginStart="@dimen/d15dp"
+            >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/d15dp">
+
+            <TextView
+                android:id="@+id/txtDatosBasicos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/datos_basicos"
+                android:textStyle="bold"
+                android:textSize="@dimen/d17dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/edtNombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/nombre"
+                android:textSize="@dimen/d15dp"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtDatosBasicos" />
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/edtEdad"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="24dp"
+                android:hint="@string/edad"
+                android:textSize="@dimen/d15dp"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/spinner"
+                app:layout_constraintEnd_toStartOf="@id/spinner"
+                app:layout_constraintStart_toStartOf="@+id/edtNombre"
+                app:layout_constraintTop_toTopOf="@+id/spinner" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/spinner"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:hint="@string/genero"
+                android:textSize="@dimen/d15dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/d15dp"
+                app:layout_constraintEnd_toEndOf="@+id/edtNombre"
+                app:layout_constraintStart_toEndOf="@+id/edtEdad"
+                app:layout_constraintTop_toBottomOf="@id/edtNombre">
+
+                <AutoCompleteTextView
+                    android:id="@+id/spinnerGenero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/d15dp"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/edtLatitud"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="@dimen/d15dp"
+                android:layout_marginEnd="24dp"
+                android:hint="@string/latitud"
+                android:textSize="@dimen/d15dp"
+                android:inputType="numberSigned"
+                android:layout_marginBottom="@dimen/d15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/edtLongitud"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner" />
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/edtLongitud"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="@dimen/d15dp"
+                android:textSize="@dimen/d15dp"
+                android:hint="@string/longitud"
+                android:inputType="numberSigned"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/edtLatitud"
+                app:layout_constraintTop_toBottomOf="@id/spinner" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+                android:id="@+id/cardInv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d15dp"
+                app:layout_constraintTop_toBottomOf="@id/cardDatos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/d15dp">
+
+                    <TextView
+                        android:id="@+id/txtInventario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/inventario"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/d17dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/edtAgua"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:hint="@string/agua"
+                        android:textSize="@dimen/d15dp"
+                        android:inputType="number"
+                        android:layout_marginTop="@dimen/d15dp"
+                        app:layout_constraintEnd_toStartOf="@+id/edtComida"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtInventario" />
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/edtComida"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:hint="@string/comida"
+                        android:textSize="@dimen/d15dp"
+                        android:inputType="number"
+                        app:layout_constraintBottom_toBottomOf="@+id/edtAgua"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/edtAgua"
+                        app:layout_constraintTop_toBottomOf="@+id/txtInventario" />
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/edtMedicamento"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginTop="@dimen/d15dp"
+                        android:hint="@string/medicamento"
+                        android:inputType="number"
+                        android:textSize="@dimen/d15dp"
+                        android:layout_marginBottom="@dimen/d15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/edtMuniciones"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/edtAgua" />
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/edtMuniciones"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginTop="@dimen/d15dp"
+                        android:hint="@string/municiones"
+                        android:inputType="number"
+                        android:textSize="@dimen/d15dp"
+                        android:layout_marginBottom="@dimen/d15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/edtMedicamento"
+                        app:layout_constraintTop_toBottomOf="@+id/edtComida" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/agregar"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="@string/agregar"
+                android:layout_marginTop="@dimen/d100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardInv" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</FrameLayout>
