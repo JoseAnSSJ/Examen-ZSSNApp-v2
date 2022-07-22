@@ -2,6 +2,7 @@ package com.examen.zssnapp.ui.perfil
 
 import android.app.AlertDialog
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -68,12 +69,14 @@ class PerfilFragment : Fragment() {
                 .setImageResource(R.drawable.ic_baseline_screen_lock_portrait_24)
             view.findViewById<Button>(R.id.btnInformes).isEnabled = false
             view.findViewById<Button>(R.id.btnCambioCoordenas).isEnabled = false
+            view.findViewById<Button>(R.id.btnMercado).isEnabled = false
             view.findViewById<Button>(R.id.btnReportar).isEnabled = false
             view.findViewById<Button>(R.id.btnSalir).isEnabled = false
             view.findViewById<FloatingActionButton>(R.id.fab).isEnabled = false
         } else {
             view.findViewById<Button>(R.id.btnInformes).isEnabled = true
             view.findViewById<Button>(R.id.btnCambioCoordenas).isEnabled = true
+            view.findViewById<Button>(R.id.btnMercado).isEnabled = true
             view.findViewById<Button>(R.id.btnReportar).isEnabled = true
             view.findViewById<Button>(R.id.btnSalir).isEnabled = true
             view.findViewById<FloatingActionButton>(R.id.fab).isEnabled = true
@@ -134,6 +137,10 @@ class PerfilFragment : Fragment() {
                 sobrevivientesResponse.idSobreviviente!!,
                 view
             ).show()
+        }
+
+        view.findViewById<Button>(R.id.btnMercado).setOnClickListener {
+            findNavController().navigate(R.id.perfilFragmenttoMercado)
         }
 
         view.findViewById<Button>(R.id.btnReportar).setOnClickListener {

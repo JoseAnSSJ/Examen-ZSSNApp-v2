@@ -35,6 +35,7 @@
     <string name="cambio_ubicaci_n">Cambio ubicación</string>
     <string name="cancelar">Cancelar</string>
     <string name="aceptar">Aceptar</string>
+    <string name="mercado">Mercado</string>
 
 
     <string-array name="Generos">

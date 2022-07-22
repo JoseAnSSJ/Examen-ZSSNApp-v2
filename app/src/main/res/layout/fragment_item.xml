@@ -10,11 +10,14 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="15dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imagenPerfil"
@@ -34,6 +37,8 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="16dp"
+                android:maxLines="2"
+                android:ellipsize="end"
                 android:gravity="center"
                 android:textSize="@dimen/d15dp"
                 android:text="José Antonio Garciía Rodriguez"

@@ -38,6 +38,9 @@
         <action android:id="@+id/mainFragmenttonuevoUsuarioFragment1"
             app:destination="@+id/nuevoUsuarioFragmentNav"/>
 
+        <action android:id="@+id/perfilFragmenttoMercado"
+            app:destination="@+id/Mercado"/>
+
     </fragment>
 
     <fragment
@@ -53,6 +56,14 @@
         android:name="com.examen.zssnapp.ui.reportar.ReportarFragment"
         android:label="nuevo_usuario"
         tools:layout="@layout/reportar_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/Mercado"
+        android:name="com.examen.zssnapp.ui.mercado.MercadoFragment"
+        android:label="Mercado"
+        tools:layout="@layout/fragment_mercado">
 
     </fragment>
 

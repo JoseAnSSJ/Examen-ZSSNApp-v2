@@ -15,4 +15,5 @@
     <dimen name="d20dp">20dp</dimen>
     <dimen name="d40dp">40dp</dimen>
     <dimen name="d17dp">17dp</dimen>
+    <dimen name="d24dp">24dp</dimen>
 </resources>
